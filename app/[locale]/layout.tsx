@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 
 import { routing } from '@/i18n/routing';
@@ -28,11 +28,5 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  return (
-    <html lang={(await params).locale || 'en'}>
-      <body className="flex min-h-screen flex-col">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
-      </body>
-    </html>
-  );
+  return <>{children}</>;
 }
