@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { GrGroup } from 'react-icons/gr';
 
 import { cn } from '@/lib/utils';
 
@@ -42,6 +43,9 @@ export const Header = () => {
             href="/"
           >
             Main
+          </Link>
+          <Link href="/about-us">
+            <GrGroup className="h-7 w-7 transition-colors duration-300 hover:text-orange-600" />
           </Link>
           <LanguageSelect />
           <Button className="cursor-pointer">Sign In</Button>
