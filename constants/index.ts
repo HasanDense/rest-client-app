@@ -32,3 +32,9 @@ export const DEVELOPERS = [
     name: 'Katsiaryna',
   },
 ];
+
+export const ROUTES = {
+  MAIN: '/',
+  SIGN_IN: '/signin',
+  SIGN_UP: '/signup',
+};
