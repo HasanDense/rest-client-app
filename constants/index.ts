@@ -34,7 +34,10 @@ export const DEVELOPERS = [
 ];
 
 export const ROUTES = {
+  HISTORY: '/history',
   MAIN: '/',
+  REST: '/rest',
   SIGN_IN: '/sign-in',
   SIGN_UP: '/sign-up',
+  VARIABLES: '/variables',
 };
